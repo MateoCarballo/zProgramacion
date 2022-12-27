@@ -8,7 +8,10 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
+       diaDeLaSemana();
+    }
 
+    public static void diaDeLaSemana()throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int entrada =0;
@@ -19,7 +22,6 @@ public class Main {
             System.out.println(aleatorio);
             entrada=Integer.parseInt(br.readLine());
         }while(entrada!=0);
-
     }
 
 }
