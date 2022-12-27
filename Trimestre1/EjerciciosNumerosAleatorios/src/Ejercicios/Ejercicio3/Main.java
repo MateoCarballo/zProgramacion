@@ -16,7 +16,7 @@ public class Main {
             String dias[] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"};
             System.out.println(dias[UtilidadesMatematicas.numAleatorio(0, 6)]);
             a++;
-            if (a==9){
+            if (a==10){
                 continuar=false;
             }
         }while(continuar);
