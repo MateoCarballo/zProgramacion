@@ -32,8 +32,9 @@ Se debe mostrar también la suma total (los puntos que suman entre los tres dado
 - Si las tres figuras son diferentes se debe mostrar el mensaje “Lo siento, ha perdido”.
 - Si hay dos figuras iguales y una diferente se debe mostrar el mensaje “Bien, ha recuperado su moneda”.
 - Si las tres figuras son iguales se debe mostrar “Enhorabuena, ha ganado 10 monedas”.
-
+  
 * Ejemplo 1:
+  
 * diamante<->diamante<->limón
 * Bien, ha recuperado su moneda
 
@@ -43,7 +44,7 @@ Se debe mostrar también la suma total (los puntos que suman entre los tres dado
 
 * Ejemplo 3:
 * corazón<->corazón<->corazón
-* Enhorabuena, ha ganado 10 monedas
+* Enhorabuena, ha ganado 10 monedas 
 
 ### 7. Realiza un programa que muestre al azar el nombre de una carta de la baraja francesa.
 
