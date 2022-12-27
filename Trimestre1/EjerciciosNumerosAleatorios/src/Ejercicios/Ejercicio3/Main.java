@@ -9,10 +9,12 @@ public class Main {
 
 
     public static void main(String[] args) {
+        boolean continuar=true;
 
-       String dias []={"Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"};
-       System.out.println(dias[UtilidadesMatematicas.numAleatorio(0,6)]);
-
+        do {
+            String dias[] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"};
+            System.out.println(dias[UtilidadesMatematicas.numAleatorio(0, 6)]);
+        }while(continuar);
     }
 
 
