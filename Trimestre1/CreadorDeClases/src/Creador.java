@@ -3,7 +3,7 @@ public class Creador {
 String nombreClaseI;
 String atributo1I;
 //Dtatic para poder usarlo en el metodo generador secuencial
-static int contador=0;
+private static int contador=0;
 /*
 Si el creador es private solo le puede llamar desde la misma clase?
  */
@@ -31,6 +31,7 @@ Si el creador es private solo le puede llamar desde la misma clase?
     }
 
     public static void generadorObjeto(String nombreObjeto, String atributo1){
+        contador++;
         Creador miNuevoObjeto =new Creador(nombreObjeto,atributo1);
         System.out.println(miNuevoObjeto.getNombreClaseI()+" "+miNuevoObjeto.getAtributo1I());
         System.out.println("Escrito desde el metodo de la propia clase");
