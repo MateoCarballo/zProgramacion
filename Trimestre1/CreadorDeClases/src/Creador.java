@@ -2,7 +2,7 @@ public class Creador {
 
 String nombreClaseI;
 String atributo1I;
-//Dtatic para poder usarlo en el metodo generador secuencial
+//Static para poder usarlo en el metodo generador secuencial
 private static int contador=0;
 /*
 Si el creador es private solo le puede llamar desde la misma clase?
