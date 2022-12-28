@@ -28,7 +28,5 @@ public class Main {
             System.out.println("Quieres repetir?(1=si/0=no)");
             continuar = Integer.parseInt(br.readLine());
         } while (continuar != 0);
-
-        System.out.println("codigo añadido en la rama añadiendo_buclefor");
     }
 }

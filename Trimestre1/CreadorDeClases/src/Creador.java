@@ -35,6 +35,7 @@ Si el creador es private solo le puede llamar desde la misma clase?
         Creador miNuevoObjeto =new Creador(nombreObjeto,atributo1);
         System.out.println(miNuevoObjeto.getNombreClaseI()+" "+miNuevoObjeto.getAtributo1I());
         System.out.println("Escrito desde el metodo de la propia clase");
+        System.out.println("codigo añadido en la rama añadiendo_buclefor");
     }
 
 }
