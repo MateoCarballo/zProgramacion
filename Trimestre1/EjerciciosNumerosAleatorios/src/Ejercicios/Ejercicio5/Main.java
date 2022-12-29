@@ -107,11 +107,11 @@ public class Main {
 //Matriz con nuestra combinación
                 llenarMatriz(combinacion);
                 utilidadesMatematicas.ordenarMatriz(combinacion, true);
-                controlRepeticion(combinacion);
+                controlRepeticion(combinacion,false);
 //Matriz combinacion premiada
                 llenarMatriz(combiGanadora);
                 utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
-                controlRepeticion(combiGanadora);
+                controlRepeticion(combiGanadora,false);
 //Reintegros
                 combinacion[6] = utilidadesMatematicas.numAleatorio(0, 9);
                 combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
@@ -140,18 +140,29 @@ public class Main {
             } while (continuar != 0);
         }
 
-    public static void controlRepeticion(int [] miMatriz) {
+    public static void controlRepeticion(int [] miMatriz,boolean manual) throws IOException{
+        int lbucle= miMatriz.length;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //Si coinciden dos numeros en distintas posiciones cambiamos el de la posicion mas adelantada y despues si hemos cambiado algo la volvemos a ordenar
+
+        // Si estamos en la parte manual comprobamos la repeticion en los numeros sin el reintegro
+        if (manual){
+            lbucle--;
+        }
         boolean seRepitenNumeros=false;
         do {
-            for (int i = 0; i < miMatriz.length; i++) {
-                for (int j = 0; j < miMatriz.length; j++) {
+            for (int i = 0; i < lbucle; i++) {
+                for (int j = 0; j <lbucle; j++) {
                 /*
                 Si estamos en distintas posiciones de la matriz comparamos
                  */
-                    if ((i!=j)&&((miMatriz[i] == miMatriz[j]))) {
+                    if ((i!=j)&&((miMatriz[i] == miMatriz[j]))&&(!manual)){
                     miMatriz[j] = utilidadesMatematicas.numAleatorio(1, 49);
                     seRepitenNumeros = true;
+                    }else if ((i!=j)&&((miMatriz[i] == miMatriz[j]))&&(manual)){
+                        System.out.println("Repites un numero en las posiciones->"+i+"con valor->"+miMatriz[i]+j+"con valor->"+miMatriz[j]);
+                        System.out.println("Introduce un valor valido para la segunda posicion");
+                        miMatriz[j]=Integer.parseInt(br.readLine());
                     }
                 }
             }
