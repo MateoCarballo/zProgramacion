@@ -19,16 +19,17 @@ public class Main {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("""
+                
                 Bienvenido al sorteo de la primitiva
                 Puedes introducir tus propios numeros
                 o dejar que te demos unos aleatorios.
                 Que quieres hacer?
-                1.Introducirlos manualmente
+                
+                1.Introducirlos manualmente.
+                
                 2.Generar de forma aleatoria.
                                 
-                Pulsa el numero de la opcion para continuar->
-                                
-                """);
+                Pulsa el numero de la opcion para continuar->""");
         tipodeJuego = Integer.parseInt(br.readLine());
 
         switch (tipodeJuego) {
@@ -48,17 +49,19 @@ public class Main {
     }
         public static void juegoMan () throws IOException{
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+            System.out.println("No tiene control de datos no repitas numeros por favor"+"\n");
             do {
 //Matriz con nuestra combinación
-                System.out.println("No tiene control de datos no repitas numeros por favor");
+
                 for (int i = 0; i < combinacion.length; i++) {
                     if (i< combinacion.length-1){
                         System.out.println("Escribe el numero "+ (i+1));
                         combinacion[i]=Integer.parseInt(br.readLine());
+                        System.out.println("\n");
                     }else{
                         System.out.println("Escribre tu reintegro");
                         combinacion[i]=Integer.parseInt(br.readLine());
+                        System.out.println("\n");
                     }
 
                 }
@@ -82,10 +85,10 @@ public class Main {
                 System.out.print("Tu apuesta:----------->");
                 imprimirPorPantalla(combinacion);
 
-                System.out.print("Combinacion ganadora-->");
+                System.out.print("Combinacion ganadora-->"+"\n");
                 imprimirPorPantalla(combiGanadora);
 
-                System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + "numeros ");
+                System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + " numeros "+"\n");
                 if (reintegro) {
                     System.out.println("Tu reintegro coincide");
                 } else {
