@@ -35,35 +35,34 @@ public class Main {
                 return;
             case 2:
                 juegoManual = false;
+                do {
+//Matriz con nuestra combinación
+                    llenarMatriz(combinacion);
+                    utilidadesMatematicas.ordenarMatriz(combinacion, true);
+                    controlRepeticion(combinacion);
+//Matriz combinacion premiada
+                    llenarMatriz(combiGanadora);
+                    utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
+                    controlRepeticion(combiGanadora);
+//Reintegros
+                    combinacion[6] = utilidadesMatematicas.numAleatorio(0, 9);
+                    combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
+
+                    System.out.print("Tu apuesta:----------->");
+                    imprimirPorPantalla(combinacion);
+
+                    System.out.print("Combinacion ganadora-->");
+                    imprimirPorPantalla(combiGanadora);
+
+                    System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + "numeros ");
+
+                    System.out.println("Otro intento? (1=Si/0=No)");
+                    continuar = Integer.parseInt(br.readLine());
+                } while (continuar != 0);
                 return;
             default:
                 return;
 
-
-            do {
-//Matriz con nuestra combinación
-                llenarMatriz(combinacion);
-                utilidadesMatematicas.ordenarMatriz(combinacion, true);
-                controlRepeticion(combinacion);
-//Matriz combinacion premiada
-                llenarMatriz(combiGanadora);
-                utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
-                controlRepeticion(combiGanadora);
-//Reintegros
-                combinacion[6] = utilidadesMatematicas.numAleatorio(0, 9);
-                combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
-
-                System.out.print("Tu apuesta:----------->");
-                imprimirPorPantalla(combinacion);
-
-                System.out.print("Combinacion ganadora-->");
-                imprimirPorPantalla(combiGanadora);
-
-                System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + "numeros ");
-
-                System.out.println("Otro intento? (1=Si/0=No)");
-                continuar = Integer.parseInt(br.readLine());
-            } while (continuar != 0);
         }
     }
 
