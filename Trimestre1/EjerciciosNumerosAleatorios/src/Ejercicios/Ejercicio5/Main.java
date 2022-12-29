@@ -12,6 +12,7 @@ public class Main {
         // Tomamos como reintegro la ultima posición
         int continuar=1;
         int combinacion[]=new int [7];
+        int combiGanadora[]=new int [7];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         do {
         for (int i = 0; i < (combinacion.length); i++) {
