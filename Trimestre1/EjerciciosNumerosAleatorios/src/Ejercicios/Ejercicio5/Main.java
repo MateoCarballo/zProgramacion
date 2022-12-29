@@ -44,6 +44,9 @@ public class Main {
         }
     }
 
+    public static void juegoAutomatico() {
+
+    }
     public static void controlRepeticion(int [] miMatriz) {
         //Si coinciden dos numeros en distintas posiciones cambiamos el de la posicion mas adelantada y despues si hemos cambiado algo la volvemos a ordenar
         boolean seRepitenNumeros=false;
