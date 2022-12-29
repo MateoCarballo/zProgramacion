@@ -6,17 +6,27 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
+    static int combinacion[]=new int [7];
+    static int combiGanadora[]=new int [7];
 
-
+    static int continuar=1;
+    static boolean reintegro=false;
     public static void main(String[] args) throws IOException {
         // Tomamos como reintegro la ultima posición
-        boolean reintegro=false;
-        int continuar=1;
-        int combinacion[]=new int [7];
-        int combiGanadora[]=new int [7];
+
+
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        
+    }
+
+    public static void juegoManual(){
+
+    }
+
+    public static void juegoAutomatico(){
+
+
         do {
 //Matriz con nuestra combinación
             llenarMatriz(combinacion);
