@@ -22,9 +22,9 @@ public class Main {
 
     }
 
-    public static void juegoAutomatico(){
+    public static void juegoAutomatico() throws IOException{
 
-
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         do {
 //Matriz con nuestra combinación
             llenarMatriz(combinacion);
