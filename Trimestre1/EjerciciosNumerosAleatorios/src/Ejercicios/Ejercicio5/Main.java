@@ -67,7 +67,7 @@ public class Main {
                 }
 
                 utilidadesMatematicas.ordenarMatriz(combinacion, true);
-// controlRepeticion(combinacion);
+                controlRepeticion(combinacion);
 //Matriz combinacion premiada
                 llenarMatriz(combiGanadora);
                 utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
