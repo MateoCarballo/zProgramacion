@@ -15,6 +15,8 @@ public class Main {
         int combinacion[]=new int [7];
         int combiGanadora[]=new int [7];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        
         do {
 //Matriz con nuestra combinación
             llenarMatriz(combinacion);
