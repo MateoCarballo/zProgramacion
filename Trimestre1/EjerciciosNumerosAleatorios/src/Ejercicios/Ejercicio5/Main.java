@@ -34,9 +34,11 @@ public class Main {
         switch (tipodeJuego) {
             case 1:
                 juegoManual = true;
+                juegoMan();
                 return;
             case 2:
                 juegoManual = false;
+                juegoAuto();
                 return;
             default:
                 return;
@@ -44,11 +46,58 @@ public class Main {
         }
 
     }
-        public static void juegoMan () {
+        public static void juegoMan () throws IOException{
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+            do {
+//Matriz con nuestra combinación
+                System.out.println("No tiene control de datos no repitas numeros por favor");
+                for (int i = 0; i < combinacion.length; i++) {
+                    if (i< combinacion.length-1){
+                        System.out.println("Escribe el numero "+ (i+1));
+                        combinacion[i]=Integer.parseInt(br.readLine());
+                    }else{
+                        System.out.println("Escribre tu reintegro");
+                        combinacion[i]=Integer.parseInt(br.readLine());
+                    }
+
+                }
+
+                utilidadesMatematicas.ordenarMatriz(combinacion, true);
+// controlRepeticion(combinacion);
+//Matriz combinacion premiada
+                llenarMatriz(combiGanadora);
+                utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
+                controlRepeticion(combiGanadora);
+//Reintegros
+//combinacion[6] = utilidadesMatematicas.numAleatorio(0, 9);
+//combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
+
+                if (combinacion[6] == combiGanadora[6]) {
+                    reintegro = true;
+                } else {
+                    reintegro = false;
+                }
+
+                System.out.print("Tu apuesta:----------->");
+                imprimirPorPantalla(combinacion);
+
+                System.out.print("Combinacion ganadora-->");
+                imprimirPorPantalla(combiGanadora);
+
+                System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + "numeros ");
+                if (reintegro) {
+                    System.out.println("Tu reintegro coincide");
+                } else {
+                    System.out.println("Tu reintegro no coincide");
+                }
+                System.out.println();
+                System.out.println("Seguir en manual? (1=Continuar/0=Salir)");
+                continuar = Integer.parseInt(br.readLine());
+            } while (continuar != 0);
         }
 
-        public static void juegoAutomatico () throws IOException{
+        public static void juegoAuto () throws IOException{
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             do {
