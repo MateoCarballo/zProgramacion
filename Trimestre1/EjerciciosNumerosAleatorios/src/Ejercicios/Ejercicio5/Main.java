@@ -20,6 +20,7 @@ public class Main {
 
         //Se cambia la matriz directamente, puesto que apuntamos al bloque de memoria donde se encuentra la matriz
         utilidadesMatematicas.ordenarMatriz(combinacion,true);
+        controlRepeticion(combinacion);
         combinacion[6]= utilidadesMatematicas.numAleatorio(0,9);
         //Para poder ordenarlo necesito sacar la impresion por pantalla
 
@@ -33,5 +34,29 @@ public class Main {
             System.out.println("Otro intento? (1=Si/0=No)");
             continuar=Integer.parseInt(br.readLine());
         }while(continuar!=0);
+    }
+
+    public static void controlRepeticion(int [] miMatriz) {
+        //Si coinciden dos numeros en distintas posiciones cambiamos el de la posicion mas adelantada y despues si hemos cambiado algo la volvemos a ordenar
+        boolean seRepitenNumeros=false;
+        do {
+            for (int i = 0; i < miMatriz.length; i++) {
+                for (int j = 0; j < miMatriz.length; j++) {
+                /*
+                Si estamos en distintas posiciones de la matriz comparamos
+                 */
+                    if (miMatriz[i] != miMatriz[j]) {
+                        if (miMatriz[i] == miMatriz[j]) {
+                            miMatriz[j] = utilidadesMatematicas.numAleatorio(1, 49);
+                            seRepitenNumeros = true;
+                        }
+                    }
+                }
+            }
+            if (seRepitenNumeros) {
+                utilidadesMatematicas.ordenarMatriz(miMatriz, true);
+                seRepitenNumeros=false;
+            }
+        }while(seRepitenNumeros);
     }
 }
