@@ -29,6 +29,6 @@ public class Main {
             continuar = Integer.parseInt(br.readLine());
         } while (continuar != 0);
 
-        
+
     }
 }
