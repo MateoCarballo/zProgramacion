@@ -10,6 +10,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // Tomamos como reintegro la ultima posición
+        boolean reintegro=false;
         int continuar=1;
         int combinacion[]=new int [7];
         int combiGanadora[]=new int [7];
@@ -27,6 +28,12 @@ public class Main {
             combinacion[6]= utilidadesMatematicas.numAleatorio(0,9);
             combiGanadora[6]=utilidadesMatematicas.numAleatorio(0,9);
 
+            if (combinacion[6]==combiGanadora[6]){
+                reintegro=true;
+            }else{
+                reintegro=false;
+            }
+
             System.out.print("Tu apuesta:----------->");
             imprimirPorPantalla(combinacion);
 
@@ -34,7 +41,12 @@ public class Main {
             imprimirPorPantalla(combiGanadora);
 
             System.out.println("Has acertado->"+comprobarSorteo(combinacion,combiGanadora)+"numeros ");
-
+            if(reintegro){
+                System.out.println("Tu reintegro coincide");
+            }else{
+                System.out.println("Tu reintegro no coincide");
+            }
+            System.out.println();
             System.out.println("Otro intento? (1=Si/0=No)");
             continuar=Integer.parseInt(br.readLine());
         }while(continuar!=0);
@@ -71,8 +83,8 @@ public class Main {
     public static int comprobarSorteo(int[]miMatriz1,int[]miMatriz2){
         //Las matrices deben ser de la misma longitud
         int posicionesIguales=0;
-        for (int i = 0; i < miMatriz1.length; i++) {
-            for (int j = 0; j < miMatriz1.length; j++) {
+        for (int i = 0; i < (miMatriz1.length-1); i++) {
+            for (int j = 0; j < (miMatriz1.length-1); j++) {
                 if ((miMatriz1[i] == miMatriz2[j])) {
                     posicionesIguales++;
                 }
