@@ -12,14 +12,15 @@ public class Main {
         // Tomamos como reintegro la ultima posición
         int combinacion[]=new int [7];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < combinacion.length; i++) {
+        for (int i = 0; i < (combinacion.length); i++) {
             combinacion[i]= utilidadesMatematicas.numAleatorio(1,49);
         }
+
         //Se cambia la matriz directamente, puesto que apuntamos al bloque de memoria donde se encuentra la matriz
         utilidadesMatematicas.ordenarMatriz(combinacion,true);
-
+        combinacion[6]= utilidadesMatematicas.numAleatorio(0,9);
         //Para poder ordenarlo necesito sacar la impresion por pantalla
-        for (int i = 0; i <combinacion.length-1 ; i++) {
+        for (int i = 0; i <combinacion.length ; i++) {
             if (i== (combinacion.length-1)){
                 System.out.print("R->");
             }
