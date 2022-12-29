@@ -15,23 +15,26 @@ public class Main {
         int combiGanadora[]=new int [7];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         do {
-        for (int i = 0; i < (combinacion.length); i++) {
-            combinacion[i]= utilidadesMatematicas.numAleatorio(1,49);
-        }
+//Matriz con nuestra combinación
+            llenarMatriz(combinacion);
+            utilidadesMatematicas.ordenarMatriz(combinacion,true);
+            controlRepeticion(combinacion);
+//Matriz combinacion premiada
+            llenarMatriz(combiGanadora);
+            utilidadesMatematicas.ordenarMatriz(combiGanadora,true);
+            controlRepeticion(combiGanadora);
+//Reintegros
+            combinacion[6]= utilidadesMatematicas.numAleatorio(0,9);
+            combiGanadora[6]=utilidadesMatematicas.numAleatorio(0,9);
 
-        //Se cambia la matriz directamente, puesto que apuntamos al bloque de memoria donde se encuentra la matriz
-        utilidadesMatematicas.ordenarMatriz(combinacion,true);
-        controlRepeticion(combinacion);
-        combinacion[6]= utilidadesMatematicas.numAleatorio(0,9);
-        //Para poder ordenarlo necesito sacar la impresion por pantalla
+            System.out.print("Tu apuesta:----------->");
+            imprimirPorPantalla(combinacion);
 
-            for (int i = 0; i < combinacion.length; i++) {
-                if (i == (combinacion.length - 1)) {
-                    System.out.print("R->");
-                }
-                System.out.print(combinacion[i] + " ");
-            }
-            System.out.println("");
+            System.out.print("Combinacion ganadora-->");
+            imprimirPorPantalla(combiGanadora);
+
+            System.out.println("Has acertado->"+comprobarSorteo(combinacion,combiGanadora)+"numeros ");
+
             System.out.println("Otro intento? (1=Si/0=No)");
             continuar=Integer.parseInt(br.readLine());
         }while(continuar!=0);
@@ -46,11 +49,9 @@ public class Main {
                 /*
                 Si estamos en distintas posiciones de la matriz comparamos
                  */
-                    if (miMatriz[i] != miMatriz[j]) {
-                        if (miMatriz[i] == miMatriz[j]) {
-                            miMatriz[j] = utilidadesMatematicas.numAleatorio(1, 49);
-                            seRepitenNumeros = true;
-                        }
+                    if ((i!=j)&&((miMatriz[i] == miMatriz[j]))) {
+                    miMatriz[j] = utilidadesMatematicas.numAleatorio(1, 49);
+                    seRepitenNumeros = true;
                     }
                 }
             }
@@ -59,5 +60,35 @@ public class Main {
                 seRepitenNumeros=false;
             }
         }while(seRepitenNumeros);
+    }
+
+    public static void llenarMatriz(int[]miMatriz){
+        for (int i = 0; i < miMatriz.length; i++) {
+            miMatriz[i]= utilidadesMatematicas.numAleatorio(1,49);
+        }
+    }
+
+    public static int comprobarSorteo(int[]miMatriz1,int[]miMatriz2){
+        //Las matrices deben ser de la misma longitud
+        int posicionesIguales=0;
+        for (int i = 0; i < miMatriz1.length; i++) {
+            for (int j = 0; j < miMatriz1.length; j++) {
+                if ((miMatriz1[i] == miMatriz2[j])) {
+                    posicionesIguales++;
+                }
+            }
+
+        }
+        return posicionesIguales;
+    }
+
+    public static void imprimirPorPantalla(int [] miMatriz){
+        for (int i = 0; i < miMatriz.length; i++) {
+            if (i == (miMatriz.length - 1)) {
+                System.out.print("R->");
+            }
+            System.out.print(miMatriz[i] + " ");
+        }
+        System.out.println("");
     }
 }
