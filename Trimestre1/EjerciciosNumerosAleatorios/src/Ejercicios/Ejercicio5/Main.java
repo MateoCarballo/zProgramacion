@@ -8,10 +8,10 @@ import java.io.InputStreamReader;
 public class Main {
     static int combinacion[]=new int [7];
     static int combiGanadora[]=new int [7];
-
     static int continuar=1;
     static boolean reintegro=false;
     static boolean juegoManual = false;
+
     static int tipodeJuego = 10;
     public static void main(String[] args) throws IOException {
         // Tomamos como reintegro la ultima posición
@@ -42,51 +42,51 @@ public class Main {
                 return;
 
         }
-    }
-
-    public static void juegoManual(){
 
     }
+        public static void juegoMan () {
 
-    public static void juegoAutomatico() throws IOException{
+        }
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        do {
+        public static void juegoAutomatico () throws IOException{
+
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            do {
 //Matriz con nuestra combinación
-            llenarMatriz(combinacion);
-            utilidadesMatematicas.ordenarMatriz(combinacion,true);
-            controlRepeticion(combinacion);
+                llenarMatriz(combinacion);
+                utilidadesMatematicas.ordenarMatriz(combinacion, true);
+                controlRepeticion(combinacion);
 //Matriz combinacion premiada
-            llenarMatriz(combiGanadora);
-            utilidadesMatematicas.ordenarMatriz(combiGanadora,true);
-            controlRepeticion(combiGanadora);
+                llenarMatriz(combiGanadora);
+                utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
+                controlRepeticion(combiGanadora);
 //Reintegros
-            combinacion[6]= utilidadesMatematicas.numAleatorio(0,9);
-            combiGanadora[6]=utilidadesMatematicas.numAleatorio(0,9);
+                combinacion[6] = utilidadesMatematicas.numAleatorio(0, 9);
+                combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
 
-            if (combinacion[6]==combiGanadora[6]){
-                reintegro=true;
-            }else{
-                reintegro=false;
-            }
+                if (combinacion[6] == combiGanadora[6]) {
+                    reintegro = true;
+                } else {
+                    reintegro = false;
+                }
 
-            System.out.print("Tu apuesta:----------->");
-            imprimirPorPantalla(combinacion);
+                System.out.print("Tu apuesta:----------->");
+                imprimirPorPantalla(combinacion);
 
-            System.out.print("Combinacion ganadora-->");
-            imprimirPorPantalla(combiGanadora);
+                System.out.print("Combinacion ganadora-->");
+                imprimirPorPantalla(combiGanadora);
 
-            System.out.println("Has acertado->"+comprobarSorteo(combinacion,combiGanadora)+"numeros ");
-            if(reintegro){
-                System.out.println("Tu reintegro coincide");
-            }else{
-                System.out.println("Tu reintegro no coincide");
-            }
-            System.out.println();
-            System.out.println("Otro intento? (1=Si/0=No)");
-            continuar=Integer.parseInt(br.readLine());
-        }while(continuar!=0);
-    }
+                System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + "numeros ");
+                if (reintegro) {
+                    System.out.println("Tu reintegro coincide");
+                } else {
+                    System.out.println("Tu reintegro no coincide");
+                }
+                System.out.println();
+                System.out.println("Otro intento? (1=Si/0=No)");
+                continuar = Integer.parseInt(br.readLine());
+            } while (continuar != 0);
+        }
 
     public static void controlRepeticion(int [] miMatriz) {
         //Si coinciden dos numeros en distintas posiciones cambiamos el de la posicion mas adelantada y despues si hemos cambiado algo la volvemos a ordenar
@@ -119,8 +119,8 @@ public class Main {
     public static int comprobarSorteo(int[]miMatriz1,int[]miMatriz2){
         //Las matrices deben ser de la misma longitud
         int posicionesIguales=0;
-        for (int i = 0; i < miMatriz1.length; i++) {
-            for (int j = 0; j < miMatriz1.length; j++) {
+        for (int i = 0; i < (miMatriz1.length-1); i++) {
+            for (int j = 0; j < (miMatriz1.length-1); j++) {
                 if ((miMatriz1[i] == miMatriz2[j])) {
                     posicionesIguales++;
                 }
