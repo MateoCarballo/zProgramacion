@@ -14,6 +14,17 @@ public class Main {
         int combinacion[]=new int [7];
         int combiGanadora[]=new int [7];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("""
+                Bienvenido al sorteo de la primitiva
+                Puedes introducir tus propios numeros
+                o dejar que te demos unos aleatorios.
+                Que quieres hacer?
+                1.Introducirlos manualmente
+                2.Generar de forma aleatoria.
+                
+                Pulsa el numero de la opcion para continuar->
+                                
+                """);
         do {
 //Matriz con nuestra combinación
             llenarMatriz(combinacion);
