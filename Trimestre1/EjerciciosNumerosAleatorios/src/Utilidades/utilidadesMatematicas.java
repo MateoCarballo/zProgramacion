@@ -2,7 +2,7 @@ package Utilidades;
 
 import java.util.Random;
 
-public class UtilidadesMatematicas {
+public class utilidadesMatematicas {
     public static int numAleatorio(int limInferior, int limSuperior){
         int aleatorio = (int)(Math.random()*(limSuperior-limInferior+1)+limInferior);
         return aleatorio;

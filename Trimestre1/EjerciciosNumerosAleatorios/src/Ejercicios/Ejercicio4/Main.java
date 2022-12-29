@@ -1,6 +1,6 @@
 package Ejercicios.Ejercicio4;
 
-import Utilidades.UtilidadesMatematicas;
+import Utilidades.utilidadesMatematicas;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -18,7 +18,7 @@ public class Main {
             dado=0;
             suma=0;
             for (int i = 1; i <= 3; i++) {
-              dado=UtilidadesMatematicas.numAleatorio(1,6);
+              dado= utilidadesMatematicas.numAleatorio(1,6);
               System.out.print("Tirada "+i+"->");
               System.out.print(dado+" ");
               suma+=dado;

@@ -1,6 +1,6 @@
 package Ejercicios.Ejercicio2;
 
-import Utilidades.UtilidadesMatematicas;
+import Utilidades.utilidadesMatematicas;
 
 public class Main {
 
@@ -12,7 +12,7 @@ public class Main {
         int acumulado=0;
         int media=0;
         for (int i = 0; i < matrizAleatorios.length ; i++) {
-        matrizAleatorios[i]=(UtilidadesMatematicas.numAleatorio(100,199));
+        matrizAleatorios[i]=(utilidadesMatematicas.numAleatorio(100,199));
         acumulado+=matrizAleatorios[i];
 
         if (maximo< matrizAleatorios[i]){

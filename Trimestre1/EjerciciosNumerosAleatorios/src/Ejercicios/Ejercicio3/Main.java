@@ -1,9 +1,6 @@
 package Ejercicios.Ejercicio3;
 
-import Utilidades.UtilidadesMatematicas;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import Utilidades.utilidadesMatematicas;
 
 public class Main {
 
@@ -14,7 +11,7 @@ public class Main {
 
         do {
             String dias[] = {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"};
-            System.out.println(dias[UtilidadesMatematicas.numAleatorio(0, 6)]);
+            System.out.println(dias[utilidadesMatematicas.numAleatorio(0, 6)]);
             a++;
             if (a==10){
                 continuar=false;
