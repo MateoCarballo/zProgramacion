@@ -44,7 +44,7 @@ public class Main {
         }
     }
 
-    public static void juegoAutomatico() {
+    public static void juegoAutomatico() throws IOException{
 
     }
     public static void controlRepeticion(int [] miMatriz) {
