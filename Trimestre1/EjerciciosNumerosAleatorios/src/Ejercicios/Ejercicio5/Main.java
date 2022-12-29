@@ -35,11 +35,11 @@ public class Main {
         switch (tipodeJuego) {
             case 1:
                 juegoManual = true;
-                juegoMan();
+                Man();
                 return;
             case 2:
                 juegoManual = false;
-                juegoAuto();
+                Auto();
                 return;
             default:
                 return;
@@ -47,7 +47,7 @@ public class Main {
         }
 
     }
-        public static void juegoMan () throws IOException{
+        public static void Man () throws IOException{
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("No tiene control de datos no repitas numeros por favor"+"\n");
             do {
@@ -55,7 +55,7 @@ public class Main {
 
                 for (int i = 0; i < combinacion.length; i++) {
                     if (i< combinacion.length-1){
-                        System.out.println("Escribe el numero "+ (i+1));
+                        System.out.println("Escribe el numero "+ (i));
                         combinacion[i]=Integer.parseInt(br.readLine());
                         System.out.println("\n");
                     }else{
@@ -67,14 +67,14 @@ public class Main {
                 }
 
                 utilidadesMatematicas.ordenarMatriz(combinacion, true);
-                controlRepeticion(combinacion);
+                controlRepeticion(combinacion,juegoManual);
 //Matriz combinacion premiada
                 llenarMatriz(combiGanadora);
                 utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
-                controlRepeticion(combiGanadora);
+                controlRepeticion(combiGanadora,!juegoManual);
 //Reintegros
 //combinacion[6] = utilidadesMatematicas.numAleatorio(0, 9);
-//combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
+                combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
 
                 if (combinacion[6] == combiGanadora[6]) {
                     reintegro = true;
@@ -85,7 +85,7 @@ public class Main {
                 System.out.print("Tu apuesta:----------->");
                 imprimirPorPantalla(combinacion);
 
-                System.out.print("Combinacion ganadora-->"+"\n");
+                System.out.print("Combinacion ganadora-->");
                 imprimirPorPantalla(combiGanadora);
 
                 System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + " numeros "+"\n");
@@ -100,7 +100,7 @@ public class Main {
             } while (continuar != 0);
         }
 
-        public static void juegoAuto () throws IOException{
+        public static void Auto () throws IOException{
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             do {
@@ -142,6 +142,8 @@ public class Main {
 
     public static void controlRepeticion(int [] miMatriz,boolean manual) throws IOException{
         int lbucle= miMatriz.length;
+        int reintegro=0;
+        reintegro=miMatriz[6];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         //Si coinciden dos numeros en distintas posiciones cambiamos el de la posicion mas adelantada y despues si hemos cambiado algo la volvemos a ordenar
 
@@ -152,19 +154,27 @@ public class Main {
         boolean seRepitenNumeros=false;
         do {
             for (int i = 0; i < lbucle; i++) {
-                for (int j = 0; j <lbucle; j++) {
+                for (int j = 0; j < lbucle; j++) {
                 /*
                 Si estamos en distintas posiciones de la matriz comparamos
                  */
-                    if ((i!=j)&&((miMatriz[i] == miMatriz[j]))&&(!manual)){
-                    miMatriz[j] = utilidadesMatematicas.numAleatorio(1, 49);
-                    seRepitenNumeros = true;
-                    }else if ((i!=j)&&((miMatriz[i] == miMatriz[j]))&&(manual)){
-                        System.out.println("Repites un numero en las posiciones->"+i+"con valor->"+miMatriz[i]+j+"con valor->"+miMatriz[j]);
-                        System.out.println("Introduce un valor valido para la segunda posicion");
-                        miMatriz[j]=Integer.parseInt(br.readLine());
+                    if ((i != j) && ((miMatriz[i] == miMatriz[j]))) {
+                        if (!manual) {
+                            miMatriz[j] = utilidadesMatematicas.numAleatorio(1, 49);
+                            seRepitenNumeros = true;
+                        }
+                        if (manual) {
+                            System.out.println("Repites un numero en las posiciones:" + "\n" + i + " y " + j + " con valores-> " + miMatriz[i] + " y " + miMatriz[j]);
+                            System.out.println("Introduce un valor valido para la segunda posicion");
+                            miMatriz[j] = Integer.parseInt(br.readLine());
+                        }
+
                     }
                 }
+            }
+            if (manual){
+                utilidadesMatematicas.ordenarMatriz(miMatriz, true);
+                miMatriz[6]=reintegro;
             }
             if (seRepitenNumeros) {
                 utilidadesMatematicas.ordenarMatriz(miMatriz, true);
