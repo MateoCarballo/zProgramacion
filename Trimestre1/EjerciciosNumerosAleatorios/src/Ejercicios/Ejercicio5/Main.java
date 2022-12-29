@@ -6,15 +6,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
+    static int combinacion[]=new int [7];
+    static int combiGanadora[]=new int [7];
 
-
+    static int continuar=1;
+    static boolean reintegro=false;
+    static boolean juegoManual = false;
+    static int tipodeJuego = 10;
     public static void main(String[] args) throws IOException {
         // Tomamos como reintegro la ultima posición
         int tipodeJuego = 10;
-        boolean juegoManual = false;
-        int continuar = 1;
-        int combinacion[] = new int[7];
-        int combiGanadora[] = new int[7];
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("""
                 Bienvenido al sorteo de la primitiva
