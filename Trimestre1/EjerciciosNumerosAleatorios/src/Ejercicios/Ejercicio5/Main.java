@@ -15,7 +15,7 @@ public class Main {
     static int tipodeJuego = 10;
     public static void main(String[] args) throws IOException {
         // Tomamos como reintegro la ultima posición
-        int tipodeJuego = 10;
+        int tipodeJuego =2;
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("""
@@ -28,24 +28,27 @@ public class Main {
                 1.Introducirlos manualmente.
                 
                 2.Generar de forma aleatoria.
+                
+                3.Salir.
                                 
                 Pulsa el numero de la opcion para continuar->""");
         tipodeJuego = Integer.parseInt(br.readLine());
+        do {
+            switch (tipodeJuego) {
+                case 1:
+                    juegoManual = true;
+                    juegoMan();
+                    return;
+                case 2:
+                    juegoManual = false;
+                    juegoAuto();
+                    return;
+                default:
+                    System.out.println("Numero fuera de rango, introduce un numero valido.");
+                    return;
 
-        switch (tipodeJuego) {
-            case 1:
-                juegoManual = true;
-                juegoMan();
-                return;
-            case 2:
-                juegoManual = false;
-                juegoAuto();
-                return;
-            default:
-                return;
-
-        }
-
+            }
+        }while(continuar!=3);
     }
         public static void juegoMan () throws IOException{
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -89,11 +92,13 @@ public class Main {
                 imprimirPorPantalla(combiGanadora);
 
                 System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + " numeros "+"\n");
+
                 if (reintegro) {
                     System.out.println("Tu reintegro coincide");
                 } else {
                     System.out.println("Tu reintegro no coincide");
                 }
+
                 System.out.println();
                 System.out.println("Seguir en manual? (1=Continuar/0=Salir)");
                 continuar = Integer.parseInt(br.readLine());
