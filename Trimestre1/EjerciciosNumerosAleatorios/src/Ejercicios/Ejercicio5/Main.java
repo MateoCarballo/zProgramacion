@@ -10,9 +10,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // Tomamos como reintegro la ultima posición
-        int continuar=1;
-        int combinacion[]=new int [7];
-        int combiGanadora[]=new int [7];
+        int tipodeJuego = 10;
+        boolean juegoManual = false;
+        int continuar = 1;
+        int combinacion[] = new int[7];
+        int combiGanadora[] = new int[7];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("""
                 Bienvenido al sorteo de la primitiva
@@ -21,34 +23,48 @@ public class Main {
                 Que quieres hacer?
                 1.Introducirlos manualmente
                 2.Generar de forma aleatoria.
-                
+                                
                 Pulsa el numero de la opcion para continuar->
                                 
                 """);
-        do {
+        tipodeJuego = Integer.parseInt(br.readLine());
+
+        switch (tipodeJuego) {
+            case 1:
+                juegoManual = true;
+                return;
+            case 2:
+                juegoManual = false;
+                return;
+            default:
+                return;
+
+
+            do {
 //Matriz con nuestra combinación
-            llenarMatriz(combinacion);
-            utilidadesMatematicas.ordenarMatriz(combinacion,true);
-            controlRepeticion(combinacion);
+                llenarMatriz(combinacion);
+                utilidadesMatematicas.ordenarMatriz(combinacion, true);
+                controlRepeticion(combinacion);
 //Matriz combinacion premiada
-            llenarMatriz(combiGanadora);
-            utilidadesMatematicas.ordenarMatriz(combiGanadora,true);
-            controlRepeticion(combiGanadora);
+                llenarMatriz(combiGanadora);
+                utilidadesMatematicas.ordenarMatriz(combiGanadora, true);
+                controlRepeticion(combiGanadora);
 //Reintegros
-            combinacion[6]= utilidadesMatematicas.numAleatorio(0,9);
-            combiGanadora[6]=utilidadesMatematicas.numAleatorio(0,9);
+                combinacion[6] = utilidadesMatematicas.numAleatorio(0, 9);
+                combiGanadora[6] = utilidadesMatematicas.numAleatorio(0, 9);
 
-            System.out.print("Tu apuesta:----------->");
-            imprimirPorPantalla(combinacion);
+                System.out.print("Tu apuesta:----------->");
+                imprimirPorPantalla(combinacion);
 
-            System.out.print("Combinacion ganadora-->");
-            imprimirPorPantalla(combiGanadora);
+                System.out.print("Combinacion ganadora-->");
+                imprimirPorPantalla(combiGanadora);
 
-            System.out.println("Has acertado->"+comprobarSorteo(combinacion,combiGanadora)+"numeros ");
+                System.out.println("Has acertado->" + comprobarSorteo(combinacion, combiGanadora) + "numeros ");
 
-            System.out.println("Otro intento? (1=Si/0=No)");
-            continuar=Integer.parseInt(br.readLine());
-        }while(continuar!=0);
+                System.out.println("Otro intento? (1=Si/0=No)");
+                continuar = Integer.parseInt(br.readLine());
+            } while (continuar != 0);
+        }
     }
 
     public static void controlRepeticion(int [] miMatriz) {
