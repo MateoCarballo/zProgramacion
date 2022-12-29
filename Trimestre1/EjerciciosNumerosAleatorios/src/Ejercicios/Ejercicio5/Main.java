@@ -12,8 +12,6 @@ public class Main {
     static int continuar=1;
     static boolean reintegro=false;
     public static void main(String[] args) throws IOException {
-        // Tomamos como reintegro la ultima posición
-
 
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
