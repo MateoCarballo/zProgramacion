@@ -1,4 +1,4 @@
-package Ejercicio8;
+package Avanzados.Ejercicio8;
 
 import misUtilidades.utilidadesMatematicas;
 import java.io.BufferedReader;

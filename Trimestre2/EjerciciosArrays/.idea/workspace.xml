@@ -36,13 +36,13 @@
     "last_opened_file_path": "C:/Users/mateo/Desktop/Mi GitHubLocal/Programacion/Trimestre2/EjerciciosArrays"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Ejercicio8.Main">
-    <configuration name="Ejercicio8.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio8.Main" />
+  <component name="RunManager" selected="Application.Avanzados.Ejercicio9.Main">
+    <configuration name="Avanzados.Ejercicio8.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio8.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ejercicio8.*" />
+          <option name="PATTERN" value="Avanzados.Ejercicio8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,12 +50,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Fáciles.Ejercicio4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Fáciles.Ejercicio4.Main" />
+    <configuration name="Avanzados.Ejercicio9.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio9.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Fáciles.Ejercicio4.*" />
+          <option name="PATTERN" value="Avanzados.Ejercicio9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ejercicio8.Main" />
+        <item itemvalue="Application.Avanzados.Ejercicio9.Main" />
+        <item itemvalue="Application.Avanzados.Ejercicio8.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Fáciles.Ejercicio6.Main" />
         <item itemvalue="Application.Fáciles.Ejercicio5.Main" />
-        <item itemvalue="Application.Fáciles.Ejercicio4.Main" />
       </list>
     </recent_temporary>
   </component>
