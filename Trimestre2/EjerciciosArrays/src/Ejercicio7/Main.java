@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Que numero ocupa la ultima posicion?");
         fin=Integer.parseInt(br.readLine());
         diferencia=fin-inicio;
-        int[] matrizEnteros =new int[diferencia];
+        int[] matrizEnteros =new int[diferencia+1];
 
         for (int i = 0; i < matrizEnteros.length; i++) {
             matrizEnteros[i]=inicio;
