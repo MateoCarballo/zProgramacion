@@ -1,4 +1,4 @@
-package Sources;
+package misUtilidades;
 
 import java.util.Random;
 
@@ -22,11 +22,11 @@ public class utilidadesMatematicas {
            return miBooleano;
     }
 
-    public static void ordenarMatriz(int[] miMatriz,boolean Ordenascendente){
+    public static void ordenarMatriz(double[] miMatriz,boolean Ordenascendente){
         /*
-        Ordenar matrices si el booleano es true de menor a mayor sino de menor a mayor.
+        Ordenar matrices si el booleano es true de menor a mayor si es false de menor a mayor.
          */
-        int aux=0;
+        double aux=0;
         if (Ordenascendente){
             for (int i = 0; i < miMatriz.length; i++) {
                 for (int j = 0; j < miMatriz.length; j++) {
