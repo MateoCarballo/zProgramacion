@@ -37,12 +37,12 @@
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Ejercicio3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio3.Main" />
+    <configuration name="Fáciles.Ejercicio3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fáciles.Ejercicio3.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ejercicio3.*" />
+          <option name="PATTERN" value="Fáciles.Ejercicio3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,12 +50,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio4.Main" />
+    <configuration name="Fáciles.Ejercicio4.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fáciles.Ejercicio4.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ejercicio4.*" />
+          <option name="PATTERN" value="Fáciles.Ejercicio4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio5.Main" />
+    <configuration name="Fáciles.Ejercicio5.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fáciles.Ejercicio5.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ejercicio5.*" />
+          <option name="PATTERN" value="Fáciles.Ejercicio5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio6.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio6.Main" />
+    <configuration name="Fáciles.Ejercicio6.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fáciles.Ejercicio6.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ejercicio6.*" />
+          <option name="PATTERN" value="Fáciles.Ejercicio6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,11 +90,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio7.Main" />
+      <option name="MAIN_CLASS_NAME" value="Fáciles.Ejercicio7.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ejercicio7.*" />
+          <option name="PATTERN" value="Fáciles.Ejercicio7.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,10 +105,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Ejercicio6.Main" />
-        <item itemvalue="Application.Ejercicio5.Main" />
-        <item itemvalue="Application.Ejercicio4.Main" />
-        <item itemvalue="Application.Ejercicio3.Main" />
+        <item itemvalue="Application.Fáciles.Ejercicio6.Main" />
+        <item itemvalue="Application.Fáciles.Ejercicio5.Main" />
+        <item itemvalue="Application.Fáciles.Ejercicio4.Main" />
+        <item itemvalue="Application.Fáciles.Ejercicio3.Main" />
       </list>
     </recent_temporary>
   </component>

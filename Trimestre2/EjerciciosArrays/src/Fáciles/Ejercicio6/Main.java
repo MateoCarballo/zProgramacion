@@ -1,6 +1,5 @@
-package Ejercicio6;
+package Fáciles.Ejercicio6;
 
-import misUtilidades.utilidadesMatematicas;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

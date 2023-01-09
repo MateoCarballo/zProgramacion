@@ -1,4 +1,4 @@
-package Ejercicio3;
+package Fáciles.Ejercicio3;
 
 
 import misUtilidades.utilidadesMatematicas;

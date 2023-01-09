@@ -1,20 +1,20 @@
-package Ejercicio5;
+package Fáciles.Ejercicio4;
 
-import misUtilidades.utilidadesMatematicas;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int[] matrizEnteros =new int[20];
-
+        int[] matrizEnteros =new int[5];
         llenarMatrizEnteros(matrizEnteros);
-        System.out.println("La media de todos los numeros introducidos es -> "+ mediaAcumuladoMatriz(matrizEnteros));
-
+        System.out.println("El suma de los numeros mayores de cero es-> "+acumuladoMatriz(matrizEnteros,true));
+        System.out.println("El suma de los numeros mayores de cero es-> "+acumuladoMatriz(matrizEnteros,false));
     }
 
     public static void  llenarMatrizEnteros(int matriz[])throws IOException{
+
+        int acumuladoNeg=0;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < matriz.length; i++) {
             System.out.println("Introduce el numero de la posicion "+i);
@@ -22,12 +22,18 @@ public class Main {
         }
     }
 
-    public static int mediaAcumuladoMatriz(int [] matriz){
+    public static int acumuladoMatriz(int [] matriz,boolean acumuladoP){
         int acumulado=0;
 
         for (int i = 0; i < matriz.length; i++) {
-            acumulado= acumulado+matriz[i];
+
+            if ((matriz[i]>0)&&(acumuladoP)){
+                acumulado=acumulado+matriz[i];
+            }else if ((matriz[i]<0)&&(!acumuladoP)){
+                acumulado=acumulado+matriz[i];
+            }
         }
-        return (acumulado/matriz.length);
+
+        return acumulado;
     }
 }
