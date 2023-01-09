@@ -7,23 +7,34 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int acumuladoPos=0;
-        int acumuladoNeg=0;
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] matrizEnteros =new int[5];
-        for (int i = 0; i < matrizEnteros.length; i++) {
+        llenarMatrizEnteros(matrizEnteros);
+        System.out.println("El suma de los numeros mayores de cero es-> "+acumuladoMatriz(matrizEnteros,true));
+        System.out.println("El suma de los numeros mayores de cero es-> "+acumuladoMatriz(matrizEnteros,false));
+    }
+
+    public static void  llenarMatrizEnteros(int matriz[])throws IOException{
+
+        int acumuladoNeg=0;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        for (int i = 0; i < matriz.length; i++) {
             System.out.println("Introduce el numero de la posicion "+i);
-            matrizEnteros[i]=Integer.parseInt(br.readLine());
-            if (matrizEnteros[i]>0){
-                acumuladoPos=acumuladoPos+matrizEnteros[i];
-            }else{
-                acumuladoNeg=acumuladoNeg+matrizEnteros[i];
+            matriz[i]=Integer.parseInt(br.readLine());
+        }
+    }
+
+    public static int acumuladoMatriz(int [] matriz,boolean acumuladoP){
+        int acumulado=0;
+
+        for (int i = 0; i < matriz.length; i++) {
+
+            if ((matriz[i]>0)&&(acumuladoP)){
+                acumulado=acumulado+matriz[i];
+            }else if ((matriz[i]<0)&&(!acumuladoP)){
+                acumulado=acumulado+matriz[i];
             }
         }
 
-        utilidadesMatematicas.ordenarMatrizInt(matrizEnteros,true);
-        System.out.println("La suma de todos los negativos es  ->"+ acumuladoNeg);
-        System.out.println("La suma de todos los positivos es  ->"+ acumuladoPos);
+        return acumulado;
     }
 }
