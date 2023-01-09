@@ -18,6 +18,12 @@ public class Main {
         System.out.println("Numero de alturas a registrar?");
         tamañoMatriz=Integer.parseInt(br.readLine());
         double matrizAlturas[]=new double [tamañoMatriz];
+        /*
+        Posicion 0-> Media de las alturas
+        Posicion 1-> Maximo
+        Posicion 2-> Minimo
+         */
+        double resultados[]=new double[2];
         llenarMatriz(matrizAlturas);
         System.out.println("La media de todas las alturas introducidas es->"+(mediaMatriz(matrizAlturas)));
         System.out.println("La mayor altura es->"+maximoMatriz(matrizAlturas));
