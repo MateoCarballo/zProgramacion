@@ -3,8 +3,13 @@ package misUtilidades;
 import java.util.Random;
 
 public class utilidadesMatematicas {
-    public static int numAleatorio(int limInferior, int limSuperior){
+    public static int numAleatorioEntero(int limInferior, int limSuperior){
         int aleatorio = (int)(Math.random()*(limSuperior-limInferior+1)+limInferior);
+        return aleatorio;
+    }
+
+    public static double numAleatorioDouble(int limInferior, int limSuperior){
+        Double aleatorio = (Double)(Math.random()*(limSuperior-limInferior+1)+limInferior);
         return aleatorio;
     }
 
