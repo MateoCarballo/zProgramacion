@@ -36,7 +36,7 @@
     "last_opened_file_path": "C:/Users/mateo/Desktop/Mi GitHubLocal/Programacion/Trimestre2/EjerciciosArrays"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Ejercicio5.Main">
+  <component name="RunManager" selected="Application.Ejercicio6.Main">
     <configuration name="Ejercicio2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ejercicio2.Main" />
       <module name="EjerciciosArrays" />
@@ -89,20 +89,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio1.Main" />
+    <configuration name="Ejercicio6.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio6.Main" />
       <module name="EjerciciosArrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ejercicio6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio6.Main" />
         <item itemvalue="Application.Ejercicio5.Main" />
         <item itemvalue="Application.Ejercicio4.Main" />
         <item itemvalue="Application.Ejercicio3.Main" />
         <item itemvalue="Application.Ejercicio2.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
