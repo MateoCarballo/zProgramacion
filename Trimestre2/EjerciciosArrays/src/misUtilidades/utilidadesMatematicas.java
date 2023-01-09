@@ -67,4 +67,48 @@ public class utilidadesMatematicas {
 
     }
 
+    public static void ordenarMatrizInt(int[] miMatriz,boolean Ordenascendente){
+        /*
+        Ordenar matrices si el booleano es true de menor a mayor si es false de menor a mayor.
+         */
+        int aux=0;
+        if (Ordenascendente){
+            for (int i = 0; i < miMatriz.length; i++) {
+                for (int j = 0; j < miMatriz.length; j++) {
+                /*
+                Si estamos en distintas posiciones de la matriz comparamos
+                 */
+                    if(miMatriz[i]!=miMatriz[j]){
+                        if (miMatriz[i]< miMatriz[j]){
+                            aux=miMatriz[i];
+                            miMatriz[i]=miMatriz[j];
+                            miMatriz[j]=aux;
+
+                        }
+                    }
+
+                }
+
+            }
+        }else{
+            for (int i = 0; i < miMatriz.length; i++) {
+                for (int j = 0; j < miMatriz.length; j++) {
+                /*
+                Si estamos en distintas posiciones de la matriz comparamos
+                 */
+                    if(miMatriz[i]!=miMatriz[j]){
+                        if (miMatriz[i]> miMatriz[j]){
+                            aux=miMatriz[j];
+                            miMatriz[j]=miMatriz[i];
+                            miMatriz[i]=aux;
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
 }
