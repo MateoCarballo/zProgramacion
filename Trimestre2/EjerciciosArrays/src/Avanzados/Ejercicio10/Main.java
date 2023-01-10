@@ -26,7 +26,8 @@ public class Main {
          */
         double resultados[]=new double[3];
         llenarMatriz(matrizAlturas);
-        System.out.println("La media de todas las alturas introducidas es->"+(mediaMatriz(matrizAlturas)));
+        mediaMatriz(matrizAlturas,resultados);
+        System.out.println("La media de todas las alturas introducidas es->"+resultados[0]);
         minMaxMatriz(matrizAlturas,resultados);
         System.out.println("La mayor altura es->"+resultados[1]);
         System.out.println("La menor altura es->"+resultados[2]);
@@ -45,15 +46,14 @@ public class Main {
             miMatriz[i]= Double.parseDouble(br.readLine());
         }
     }
-    public static double mediaMatriz(double[]miMatriz){
-        double mediaValoresMatriz=0;
+    public static void mediaMatriz(double[]miMatriz,double[]resultados){
+        resultados[0]=0;
         for (int i = 0; i < miMatriz.length; i++) {
-            mediaValoresMatriz=mediaValoresMatriz+miMatriz[i];
+            resultados[0]=resultados[0]+miMatriz[i];
         }
-        mediaValoresMatriz=(mediaValoresMatriz/miMatriz.length);
-        return mediaValoresMatriz;
+        resultados[0]=(resultados[0]/miMatriz.length);
     }
-    
+
 
     public static void minMaxMatriz(double[]miMatriz,double[]resultados){
 
