@@ -28,13 +28,8 @@ public class Main {
         llenarMatriz(matrizAlturas);
         System.out.println("La media de todas las alturas introducidas es->"+(mediaMatriz(matrizAlturas)));
         minMaxMatriz(matrizAlturas,resultados);
-
         System.out.println("La mayor altura es->"+resultados[1]);
         System.out.println("La menor altura es->"+resultados[2]);
-
-
-        //System.out.println("La mayor altura es->"+maximoMatriz(matrizAlturas));
-        //System.out.println("La menor altura es->"+minimoMatriz(matrizAlturas));
 
         /*
         No necesito otra matriz para meter los valores ordenados o llenados porque a diferencia de las variables
@@ -58,43 +53,8 @@ public class Main {
         mediaValoresMatriz=(mediaValoresMatriz/miMatriz.length);
         return mediaValoresMatriz;
     }
+    
 
-    public static double maximoMatriz(double[]miMatriz){
-        double maximo=0;
-
-        for (int i = 0; i < miMatriz.length; i++) {
-            //la primera vez cargamos como valor maximo el de la primera posicion
-            if (i==0){
-                maximo=miMatriz[i];
-            }
-            /*
-            A partir de este momento si el número guardado en la posicion i es mayor que mi maximo
-            se convierte en mi nuevo maximo
-             */
-            if ((i!=0)&&(maximo<miMatriz[i])){
-                maximo=miMatriz[i];
-            }
-        }
-        return maximo;
-    }
-    public static double minimoMatriz(double[]miMatriz){
-        double minimo=0;
-
-        for (int i = 0; i < miMatriz.length; i++) {
-            //la primera vez cargamos como valor maximo el de la primera posicion
-            if (i==0){
-                minimo=miMatriz[i];
-            }
-            /*
-            A partir de este momento si el número guardado en la posicion i es mayor que mi maximo
-            se convierte en mi nuevo maximo
-             */
-            if ((i!=0)&&(minimo>miMatriz[i])){
-                minimo=miMatriz[i];
-            }
-        }
-        return minimo;
-    }
     public static void minMaxMatriz(double[]miMatriz,double[]resultados){
 
         for (int i = 0; i < miMatriz.length; i++) {
