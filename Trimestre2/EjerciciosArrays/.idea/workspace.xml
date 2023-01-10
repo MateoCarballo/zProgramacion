@@ -36,7 +36,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/mateo/Desktop/Mi GitHubLocal/Programacion/Trimestre2/EjerciciosArrays&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Avanzados.Ejercicio11.Main">
+  <component name="RunManager" selected="Application.Ejercicio12.Main">
     <configuration name="Avanzados.Ejercicio10.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio10.Main" />
       <module name="EjerciciosArrays" />
@@ -89,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Fáciles.Ejercicio7.Main" />
+    <configuration name="Ejercicio12.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio12.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Fáciles.Ejercicio7.*" />
+          <option name="PATTERN" value="Ejercicio12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ejercicio12.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio11.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio10.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio9.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio8.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

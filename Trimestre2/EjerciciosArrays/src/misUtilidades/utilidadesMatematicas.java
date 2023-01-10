@@ -116,4 +116,17 @@ public class utilidadesMatematicas {
         }
 
     }
+
+    public static void organizarMatriz(int[]mimatriz){
+        for (int i = 0; i < 4; i++) {
+            if (i< mimatriz.length){
+                System.out.print("|| ");
+            }
+            for (int j = 0; j <4 ; j++) {
+                if (i< mimatriz.length){
+                    System.out.print(mimatriz[i]);
+                }
+            }
+        }
+    }
 }
