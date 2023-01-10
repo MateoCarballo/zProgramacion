@@ -127,6 +127,7 @@ public class utilidadesMatematicas {
                     System.out.print(mimatriz[i]);
                 }
             }
+            System.out.println("|");
         }
     }
 }

@@ -1,5 +1,6 @@
 package Ejercicio12;
 
+import misUtilidades.utilidadesMatematicas;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -23,6 +24,8 @@ public class Main {
 
             if (continuar.equals("a")){
                 mostrarValores(matrizEntradas);
+                System.out.println("zzzz");
+                utilidadesMatematicas.organizarMatriz(matrizEntradas);
             }
             if (continuar.equals("b")){
                 System.out.println("Posicion?");
