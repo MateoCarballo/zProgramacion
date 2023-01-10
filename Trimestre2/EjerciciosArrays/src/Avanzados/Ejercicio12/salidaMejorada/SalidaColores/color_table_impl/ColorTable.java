@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package salidaMejorada.SalidaColores.color_table_impl;
 
-import static salidaMejorada.SalidaColores.color_table_impl.Color.*;
-import static salidaMejorada.SalidaColores.color_table_impl.Tabla.*;
+package salidaMejorada.SalidaColores.color_table_impl;
+import static  salidaMejorada.SalidaColores.color_table_impl.Color.*;
+import static  salidaMejorada.SalidaColores.color_table_impl.Tabla.*;
 import java.util.ArrayList;
 
 /**

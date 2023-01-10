@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package salidaMejorada.JOptionPane;
+package Avanzados.Ejercicio12.salidaMejorada.JOptionPane;
 
 import javax.swing.JOptionPane;
 
@@ -13,8 +13,12 @@ import javax.swing.JOptionPane;
  */
 public class OptionDialog {
     public static void main(String[] args) {
-//        salidaMejorada.JOptionPane.showOptionDialog(padre, mensaje, titulo, tipo de seleccion,
-//                tipo de mensaje, icono, opciones, valor inicial);
+/*
+salidaMejorada.JOptionPane.showOptionDialog(padre, mensaje, titulo, tipo de seleccion,
+               tipo de mensaje, icono, opciones, valor inicial);
+ */
+
+
           
         MyIcon icon = new MyIcon();
         String[] options = {"Opcion A", "Opcion B", "Opcion C", "Opcion D"};

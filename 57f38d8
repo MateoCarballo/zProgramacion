@@ -1,0 +1,86 @@
+[33me5a0221[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mprogramacion/main[m[33m)[m Añadido al proyecto ventanas emergentes
+[33m57f38d8[m Ejercicio12 completo
+[33ma76a97e[m Comienzo ejercicio12
+[33mc528ad1[m Editando commit previo
+[33mdfbf492[m Ejercicio11 completo
+[33md37cfc6[m Para entregar
+[33m0746039[m Commit provocado por el .xml
+[33m7456feb[m Ejercicio10 completo con matrices y un solo metodo v2
+[33m19db575[m Ejercicio10 completo con matrices y un solo metodo
+[33m5452f2b[m Limpiando el Ejercicio10
+[33m973b826[m Probando a unificar metodos
+[33m0a3d45c[m Mejoras sobre el ejercicio10
+[33m99a4120[m Ejercicio 10 completo
+[33mb3e06ed[m Ejercicio9 completo
+[33m8509534[m Ejercicio8 completo
+[33md2cc5d9[m Agrupando paquete de ejercios
+[33m7973a47[m Ejercicio7 limite superior menor o igual
+[33m76e5785[m Ejercicio7 extrictamente menor que limite superior
+[33m4c829e4[m Ejercicio6 completo
+[33m9c1f464[m Ejercicio 5 completo
+[33m8a56b13[m Organizando archivos y configurando gitignore
+[33m56ca829[m  Creado gitignore
+[33m50058e6[m añadido .xml al gitignore
+[33mf4352aa[m Ejercicio4 con metodos
+[33m244d884[m Ejercicio4 terminado
+[33mc535ec7[m Ejercicio3 completo
+[33mf7fa194[m  Añadido a sources utilidades matematicas
+[33mf5ce2c6[m Ejercicio2 acabado
+[33mdde0c56[m  Comienzo ejercicio2
+[33mc320659[m  Ejercicio 1 completo
+[33m07d1d58[m Primer commit segundo trimestre
+[33m809b97f[m  Dejando bonito despues de merge con remoto
+[33md984f51[m Dejando bonito v3
+[33m94a62c8[m Merge pull request #3 from MateoCarballo/test
+[33m092060f[m  Faltan cosas por pulir
+[33m946da95[m  Control de datos introducidos
+[33mc76861b[m  dejando bonito v2
+[33m67c4ded[m  Dejando el programa bonito
+[33m13660b6[m[33m ([m[1;31mprogramacion/TestMetodoJuegoManual[m[33m)[m  Primer intento con Menu y metodos separados
+[33m73ef822[m  Merge entre main y arregloRegistro
+[33m012a7d2[m[33m ([m[1;31mprogramacion/arregloReintegro[m[33m)[m  Sigo arreglando errores
+[33m5c86743[m  Menu v.5
+[33me0bd143[m  Menu pendiente mergear v.4
+[33m5c2b647[m  Puliendo pequeños errores
+[33mcffeccc[m  Menu pendiente mergear v.3
+[33mf78104e[m  Menu completo pendiente mergear v.2
+[33mcd39b20[m  Menu completo pendiente mergear con rama auto y man
+[33mbceb69b[m  Implementado menu Aut y Man pendiente programar Man
+[33ma93853b[m  Antes de empezar rama man
+[33m77aa830[m  Encapsulado codigo en metodos aut y man + variables globales
+[33mdb9d535[m Preparado menu, falta encapsular
+[33mff0b28a[m Implementando comprobacion reintegro v.2
+[33m5d167a9[m Implementada comprobacion reintegro
+[33m0fc3db8[m añadido menu
+[33m69672d9[m[33m ([m[1;31mprogramacion/combinacionGanadora[m[33m)[m Version sin errores y empaquetando codigo
+[33mc8297bd[m Pto de partida
+[33m1dd7754[m[33m ([m[1;31mprogramacion/sin_repetir_numeros[m[33m, [m[1;31mprogramacion/con_ordenNumeros[m[33m)[m  implementado sin repetir numeros
+[33m4a1df02[m version completamente funcional
+[33m1884168[m hotfix reintegro
+[33m8be949f[m  implementado ordenar matriz
+[33m8c380cc[m  pto de partida rama ordenar numeros matriz
+[33m768854d[m hasta ej 5
+[33m076756d[m añadido ventanas emergentes
+[33m5e2b5ea[m  version final
+[33mb993b8b[m  mergeads ramas main y bucfor
+[33m48038f2[m en este punto la rama main modifca la clase main y la rama bucfor la clase
+[33m3e281ab[m codigo añadido en la rama añadiendo_buclefor
+[33m3ce2633[m modificado codigo en la rama main
+[33m6d9a8eb[m  seleccionado en conf vcs rooting map
+[33m4fdb2b7[m version final generador generico(con bucle for en la main)
+[33m58f11fb[m implementando bucle for
+[33mb823372[m Creador generico private con getters y setters
+[33mee40818[m Primer intento CreadorDeClases
+[33md73df47[m  pulleado desde el remoto mergeado main <- ej3.1
+[33m94e3908[m Merge pull request #1 from MateoCarballo/ejercicio3.1
+[33mb48da2c[m commit mergeando main <- ejercicio3.1
+[33mea5a2f2[m  version definitiva
+[33m193a163[m arreglando bucle infinito
+[33m3242766[m Con bucle DO-WHILE
+[33m7169b0e[m Hecho con libreria importada comun a todos los ejercicios
+[33m1f1d075[m  Todo a traves de un metodo
+[33mace74e1[m Primera solucion
+[33m4d201ef[m 27Dic Añadido ej1 y ej2
+[33mfe275e0[m Update README.md
+[33m27b45d1[m Update README.md
+[33mb2fdcc6[m Initial commit

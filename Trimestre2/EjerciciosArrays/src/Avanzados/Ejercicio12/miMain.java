@@ -1,11 +1,14 @@
-package Ejercicio12;
+package Avanzados.Ejercicio12;
 
-import misUtilidades.utilidadesMatematicas;
+
+import misUtilidades.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import salidaMejorada.*;
 
-public class Main {
+
+public class miMain {
     public static void main(String[] args) throws IOException {
         int tamanoMatriz = 10;
         String posicion;
@@ -14,6 +17,7 @@ public class Main {
         System.out.println("#########Bienvenido al rellenador de matrices#########");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] matrizEntradas = new int[tamanoMatriz];
+
         do {
             System.out.println("""                            
                     Elige una de las siguientes opciones:

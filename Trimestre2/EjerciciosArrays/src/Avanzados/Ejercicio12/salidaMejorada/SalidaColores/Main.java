@@ -1,12 +1,9 @@
-package salidaMejorada.SalidaColores;
+package  Avanzados.Ejercicio12.salidaMejorada.SalidaColores;
 
 import java.util.ArrayList;
 
-import salidaMejorada.SalidaColores.color_table_impl.Color.*;
-import salidaMejorada.SalidaColores.color_table_impl.ColorTable.*;
-
-import static salidaMejorada.SalidaColores.color_table_impl.Color.*;
-import static salidaMejorada.SalidaColores.color_table_impl.Tabla.visuTabla;
+import static  salidaMejorada.SalidaColores.color_table_impl.Color.*;
+import static  salidaMejorada.SalidaColores.color_table_impl.Tabla.visuTabla;
 
 class Main {
     //Reset

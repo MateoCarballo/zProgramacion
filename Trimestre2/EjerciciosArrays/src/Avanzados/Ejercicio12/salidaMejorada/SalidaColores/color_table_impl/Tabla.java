@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package salidaMejorada.SalidaColores.color_table_impl;
+package  salidaMejorada.SalidaColores.color_table_impl;
 
 import java.util.ArrayList;
 
