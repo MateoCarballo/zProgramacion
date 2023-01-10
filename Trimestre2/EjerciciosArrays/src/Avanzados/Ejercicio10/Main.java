@@ -19,15 +19,22 @@ public class Main {
         tamañoMatriz=Integer.parseInt(br.readLine());
         double matrizAlturas[]=new double [tamañoMatriz];
         /*
+        Matriz Resultados
         Posicion 0-> Media de las alturas
         Posicion 1-> Maximo
         Posicion 2-> Minimo
          */
-        double resultados[]=new double[2];
+        double resultados[]=new double[3];
         llenarMatriz(matrizAlturas);
         System.out.println("La media de todas las alturas introducidas es->"+(mediaMatriz(matrizAlturas)));
-        System.out.println("La mayor altura es->"+maximoMatriz(matrizAlturas));
-        System.out.println("La menor altura es->"+minimoMatriz(matrizAlturas));
+        minMaxMatriz(matrizAlturas,resultados);
+
+        System.out.println("La mayor altura es->"+resultados[1]);
+        System.out.println("La menor altura es->"+resultados[2]);
+
+
+        //System.out.println("La mayor altura es->"+maximoMatriz(matrizAlturas));
+        //System.out.println("La menor altura es->"+minimoMatriz(matrizAlturas));
 
         /*
         No necesito otra matriz para meter los valores ordenados o llenados porque a diferencia de las variables
@@ -88,7 +95,27 @@ public class Main {
         }
         return minimo;
     }
+    public static void minMaxMatriz(double[]miMatriz,double[]resultados){
 
+        for (int i = 0; i < miMatriz.length; i++) {
+            if (i==0){
+                resultados[1]=miMatriz[i];//Maximo
+                resultados[2]=miMatriz[i];//Minimo
+            }
+            /*
+            A partir de este momento si el número guardado en la posicion i es mayor que mi maximo
+            se convierte en mi nuevo maximo. El minimo sigue la misma logica
+             */
+            if ((i!=0)&&(resultados[1]<miMatriz[i])){
+                resultados[1]=miMatriz[i];
+            }
+            if ((i!=0)&&(resultados[2]>miMatriz[i])){
+                resultados[2]=miMatriz[i];
+            }
+
+        }
+
+    }
 
 
 }
