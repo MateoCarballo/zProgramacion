@@ -29,14 +29,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/mateo/Desktop/Mi GitHubLocal/Programacion/Trimestre2/EjerciciosArrays",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mateo/Desktop/Mi GitHubLocal/Programacion/Trimestre2/EjerciciosArrays&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Avanzados.Ejercicio10.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio10.Main" />
@@ -64,6 +64,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Avanzados.Ejercicio12.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio12.Main" />
+      <module name="EjerciciosArrays" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Avanzados.Ejercicio12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Avanzados.Ejercicio9.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio9.Main" />
       <module name="EjerciciosArrays" />
@@ -77,25 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio12.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio12.Main" />
-      <module name="EjerciciosArrays" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Ejercicio12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio13.Main" />
+      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio13.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ejercicio13.*" />
+          <option name="PATTERN" value="Avanzados.Ejercicio13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,7 +106,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Ejercicio12.Main" />
+        <item itemvalue="Application.Avanzados.Ejercicio12.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio11.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio10.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio9.Main" />
