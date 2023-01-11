@@ -36,10 +36,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mateo/Desktop/Mi GitHubLocal/Programacion/Trimestre2/EjerciciosArrays&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mateo/Desktop/Mi GitHubLocal/Programacion/Trimestre2/EjerciciosArrays&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.miMain">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Avanzados.Ejercicio10.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio10.Main" />
       <module name="EjerciciosArrays" />
@@ -66,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Avanzados.Ejercicio8.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio8.Main" />
+    <configuration name="Avanzados.Ejercicio12.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio12.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Avanzados.Ejercicio8.*" />
+          <option name="PATTERN" value="Avanzados.Ejercicio12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="miMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio12.miMain" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio13.Main" />
       <module name="EjerciciosArrays" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Avanzados.Ejercicio12.*" />
+          <option name="PATTERN" value="Avanzados.Ejercicio13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.miMain" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Avanzados.Ejercicio12.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio11.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio10.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio9.Main" />
-        <item itemvalue="Application.Avanzados.Ejercicio8.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -131,19 +132,22 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="programacion/TestMetodoJuegoManual" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
