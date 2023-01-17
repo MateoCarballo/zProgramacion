@@ -130,4 +130,13 @@ public class utilidadesMatematicas {
         }
 
     }
+
+
+    /*
+    en la variable max guardamos el valor maximo del tipo de dato
+    en min el valor mas pequeño del tipo de dato
+     */
+    public static double max= Double.MIN_VALUE;
+    public static double min= Double.MAX_VALUE;
+
 }
