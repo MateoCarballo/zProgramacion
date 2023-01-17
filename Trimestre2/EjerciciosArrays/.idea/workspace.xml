@@ -81,7 +81,7 @@
       </method>
     </configuration>
     <configuration name="Ejercicio15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ejercicio15" />
+      <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio15.Ejercicio15" />
       <module name="EjerciciosArrays" />
       <method v="2">
         <option name="Make" enabled="true" />

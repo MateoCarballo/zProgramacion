@@ -1,10 +1,11 @@
+package Avanzados.Ejercicio15;
+
 import misUtilidades.utilidadesMatematicas;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import misUtilidades.utilidadesMatematicas;
 /*
 15.Crea un programa que pida al usuario dos valores N y M y luego cree un array
 de tamaño N que contenga M en todas sus posiciones. Luego muestra el array por pantalla.
