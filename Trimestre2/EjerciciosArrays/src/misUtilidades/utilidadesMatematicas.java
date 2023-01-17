@@ -3,6 +3,16 @@ package misUtilidades;
 import java.util.Random;
 
 public class utilidadesMatematicas {
+
+    public static int generador2(int limSuperior){
+        /*
+        numero aleatorio entre 0..limSuperior
+         */
+        Random r =new Random(limSuperior);
+        int aleatorio =r.nextInt(limSuperior);
+        return aleatorio;
+    }
+
     public static int numAleatorioEntero(int limInferior, int limSuperior){
         int aleatorio = (int)(Math.random()*(limSuperior-limInferior+1)+limInferior);
         return aleatorio;
@@ -127,7 +137,6 @@ public class utilidadesMatematicas {
         for (int i = 0; i < miMatriz.length ; i++) {
             System.out.println("Posicion "+i+"-->"+miMatriz[i]);
         }
-
     }
 
 
