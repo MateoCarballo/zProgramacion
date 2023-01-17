@@ -5,7 +5,7 @@ import misUtilidades.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import misUtilidades.*;
 
 
 public class miMain {
@@ -27,7 +27,7 @@ public class miMain {
             continuar = br.readLine();
 
             if (continuar.equals("a")){
-                mostrarValores(matrizEntradas);
+                utilidadesMatematicas.escribirMatriz(matrizEntradas);
                 System.out.println("zzzz");
                 utilidadesMatematicas.organizarMatriz(matrizEntradas);
             }
@@ -42,11 +42,7 @@ public class miMain {
         }while((continuar.equals("a"))|(continuar.equals("b")));
     }
 
-    public static void mostrarValores(int[]miMatriz){
-        for (int i = 0; i < miMatriz.length ; i++) {
-            System.out.println("Posicion "+i+"-->"+miMatriz[i]);
-        }
-    }
+
 
     public static void llenarMatriz(int[] miMatriz,int posicion,int valor){
         miMatriz[posicion]=valor;

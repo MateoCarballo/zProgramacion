@@ -40,7 +40,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Avanzados.Ejercicio11.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Avanzados.Ejercicio10.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Avanzados.Ejercicio10.Main" />
       <module name="EjerciciosArrays" />
@@ -108,9 +108,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio11.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio12.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio10.Main" />
         <item itemvalue="Application.Avanzados.Ejercicio9.Main" />
       </list>
