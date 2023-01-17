@@ -3,7 +3,7 @@ package Avanzados.Ejercicio11;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import misUtilidades.utilidadesMatematicas;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -15,10 +15,10 @@ public class Main {
 
         inversaMatriz(matrizInicio,matrizFin);
         System.out.println("Matriz original");
-        escribirMatriz(matrizInicio);
+        utilidadesMatematicas.escribirMatriz(matrizInicio);
         System.out.println("\n");
         System.out.println("Matriz inversa");
-        escribirMatriz(matrizFin);
+        utilidadesMatematicas.escribirMatriz(matrizFin);
         System.out.println("\n");
     }
     public static void llenarMatriz(int[] miMatriz){
@@ -33,10 +33,5 @@ public class Main {
                 longitudMatriz--;
         }
     }
-    public static void escribirMatriz(int[]miMatriz){
-        for (int i = 0; i < miMatriz.length ; i++) {
-            System.out.println("Posicion "+i+"-->"+miMatriz[i]);
-        }
 
-    }
 }

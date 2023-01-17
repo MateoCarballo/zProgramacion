@@ -43,12 +43,9 @@ public class utilidadesMatematicas {
                             aux=miMatriz[i];
                             miMatriz[i]=miMatriz[j];
                             miMatriz[j]=aux;
-
                         }
                     }
-
                 }
-
             }
         }else{
             for (int i = 0; i < miMatriz.length; i++) {
@@ -61,15 +58,11 @@ public class utilidadesMatematicas {
                             aux=miMatriz[j];
                             miMatriz[j]=miMatriz[i];
                             miMatriz[i]=aux;
-
                         }
                     }
-
                 }
-
             }
         }
-
     }
 
     public static void ordenarMatrizInt(int[] miMatriz,boolean Ordenascendente){
@@ -129,5 +122,12 @@ public class utilidadesMatematicas {
             }
             System.out.println("|");
         }
+    }
+
+    public static void escribirMatriz(int[]miMatriz){
+        for (int i = 0; i < miMatriz.length ; i++) {
+            System.out.println("Posicion "+i+"-->"+miMatriz[i]);
+        }
+
     }
 }
